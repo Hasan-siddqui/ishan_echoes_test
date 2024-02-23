@@ -3141,7 +3141,7 @@ label {
 
 .tree-rings.film {
     opacity: 0;
-    background-image: url(/img/circle-design.png);
+    background-image: url(img/circle-design.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover
@@ -3149,7 +3149,7 @@ label {
 
 .tree-rings.reel {
     opacity: 0;
-    background-image: url(/img/circle-design.png);
+    background-image: url(img/circle-design.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover
@@ -3157,7 +3157,7 @@ label {
 
 .tree-rings.photo-home {
     opacity: 0;
-    background-image: url(/img/circle-design.png);
+    background-image: url(img/circle-design.png);
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover
