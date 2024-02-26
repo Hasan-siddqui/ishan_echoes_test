@@ -3,8 +3,6 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -168,7 +166,7 @@ button.arrow-btn {
 }
 
 div#about {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
 }
 
 .section {
