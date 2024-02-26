@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
-.skw-pages {
+/* .skw-pages {
     overflow: hidden;
     position: relative;
     height: 100vh;
@@ -157,18 +157,95 @@ body {
 
 button.arrow-btn {
     position: relative;
+} */
+
+
+
+.wrapper-about {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 22;
 }
+
+div#about {
+    margin: 50px 0;
+}
+
+.section {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+.section>* {
+    width: 50%;
+}
+
+.section-img {
+    position: relative;
+    display: flex;
+}
+
+.section-img-inner {
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    top: 0%;
+    left: 3%;
+    display: flex;
+    mix-blend-mode: multiply;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(30px);
+    opacity: 0;
+    background-position: 50% 40%;
+    transition: all 0.6s ease 0s, opacity 0.6s ease 0s, background-position 0.8s ease 0s;
+    justify-content: center;
+}
+
+.section-body {
+    display: flex;
+    align-items: center;
+}
+
+.section-text {
+    padding: 5vw;
+}
+
+.section.active .section-img-inner {
+    opacity: 1;
+    background-position: 50% 50%;
+    filter: blur(0);
+    height: 100vh
+}
+
+.wrapper-about h2 {
+    text-align: center;
+}
+
+.wrapper-about .lineBottom {
+    width: 90px;
+    height: 6px;
+    background-color: rgb(255 81 0);
+    margin: 12px auto;
+    margin-bottom: 22px;
+    border-radius: 4px;
+}
+
+
 /* Details End */
 /* our work start */
 body {
-	line-height: 1.5;
-	font-family: sans-serif;
+    line-height: 1.5;
+    font-family: sans-serif;
 }
 
 * {
-	margin: 0;
-	box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
+
 .wrapper-work {
     width: 100%;
     padding: 50px 0;
@@ -176,10 +253,12 @@ body {
     color: #fff !important;
     cursor: none;
 }
+
 .wrapper-work h2 {
     text-align: center;
     color: #34383A;
 }
+
 .wrapper-work .lineBottom {
     width: 160px;
     height: 6px;
@@ -190,27 +269,27 @@ body {
 }
 
 .filter-container {
-	width: 100%;
-	margin: auto;
+    width: 100%;
+    margin: auto;
 }
 
-.row-item{
-	display: flex;
-	flex-wrap: wrap;
-	width: 80%;
+.row-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
     float: right;
 }
 
 .row.row-filter {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     width: 20%;
     float: left;
 }
 
 .gallery-item-inner img {
-	max-width: 100%;
-	vertical-align: middle;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
 /*.gallery*/
@@ -222,78 +301,79 @@ body {
 }
 
 .gallery .gallery-filter {
-	padding: 0 15px;
-	text-align: center;
-	display: flex;
+    padding: 0 15px;
+    text-align: center;
+    display: flex;
     flex-direction: column;
-	gap: 28px;
+    gap: 28px;
     margin-top: 20px;
 
 }
 
 .gallery .gallery-filter .filter-item {
-	color: #34383A;
-	font-size: 18px;
+    color: #34383A;
+    font-size: 18px;
     font-weight: 600;
-	text-transform: uppercase;
-	display: inline-block;
-	margin: 0 10px;
-	cursor: pointer;
-	border-bottom: 2px solid transparent;
-	line-height: 1.2;
-	transition: all 0.3s ease;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    line-height: 1.2;
+    transition: all 0.3s ease;
 }
 
 .gallery .gallery-filter .filter-item.active {
-	color: #ff9800;
-	border-color: #ff9800;
+    color: #ff9800;
+    border-color: #ff9800;
     margin: 0 auto;
-	height: 36px;
+    height: 36px;
 }
 
 .gallery .gallery-item {
-	width: calc(100% / 3);
-	padding: 15px;
+    width: calc(100% / 3);
+    padding: 15px;
 }
 
 .gallery .gallery-item-inner img {
-	width: 100%;
+    width: 100%;
 }
 
 .gallery .gallery-item.show {
-	animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.5s ease;
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
+    0% {
+        opacity: 0;
+    }
 
-	100% {
-		opacity: 1;
-	}
+    100% {
+        opacity: 1;
+    }
 }
 
 .gallery .gallery-item.hide {
-	display: none;
+    display: none;
 }
 
 /*responsive*/
 @media(max-width: 991px) {
-	.gallery .gallery-item {
-		width: 50%;
-	}
+    .gallery .gallery-item {
+        width: 50%;
+    }
 }
 
 @media(max-width: 767px) {
-	.gallery .gallery-item {
-		width: 100%;
-	}
+    .gallery .gallery-item {
+        width: 100%;
+    }
 
-	.gallery .gallery-filter .filter-item {
-		margin-bottom: 10px;
-	}
+    .gallery .gallery-filter .filter-item {
+        margin-bottom: 10px;
+    }
 }
+
 /* our-work end */
 /* testimonial slider start */
 .wrapper-slide {
