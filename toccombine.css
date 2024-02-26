@@ -2314,7 +2314,8 @@ label {
 }
 
 .body {
-    background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(/img/1.1.jpg);
+    /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)), url(/img/1.1.jpg); */
+    background-color: #34383A;
     height: 100vh;
     cursor: none;
 }
@@ -2327,7 +2328,7 @@ label {
     justify-content: center;
     align-items: center;
     position: fixed;
-    background-color: #272624;
+    background-color: #34383A;
 }
 .loader-animation img {
     width: 194px;
@@ -2706,20 +2707,6 @@ label {
     margin-right: 0
 }
 
-.about-container {
-    z-index: 10;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 48px;
-    padding-right: 48px;
-    position: relative;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%
-}
-
 .name {
     margin-left: 10%;
     position: relative;
@@ -2759,24 +2746,6 @@ label {
     bottom: 0%;
     left: auto;
     right: 0%
-}
-
-.about {
-    width: 40%;
-    max-width: 640px;
-    float: right;
-    position: relative;
-    bottom: 104px
-}
-
-.about-text {
-    color: #c1d1d9;
-    cursor: text;
-    margin-bottom: 56px;
-    font-family: neue-aachen-pro, sans-serif;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px
 }
 
 .white-highlights {
@@ -2963,24 +2932,6 @@ label {
     margin-bottom: 48px;
     font-family: neue-aachen-pro, sans-serif;
     font-weight: 300
-}
-
-.about-wrapper {
-    height: auto;
-    max-width: 1440px;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    display: flex;
-    position: relative;
-    top: 0%;
-    bottom: auto;
-    left: 0%;
-    right: 0%
 }
 
 .podcast {
@@ -4601,9 +4552,6 @@ a.menu-home {
         margin-left: 40px
     }
 
-    .about {
-        width: 42%
-    }
 
     .stamp {
         background-image: url(https://uploads-ssl.webflow.com/5f5092a06341960dfc1239c9/61469aaf2581ed79f68535a5_stamp-2021.svg)
@@ -4719,22 +4667,12 @@ a.menu-home {
     .sub-nav-item.last {
         margin-bottom: 0
     }
-
-    .about-container {
-        padding-left: 56px;
-        padding-right: 56px
-    }
-
     .name {
         margin-left: 0%
     }
 
     .img_about {
         min-width: 288px
-    }
-
-    .about {
-        width: 46%
     }
 
     .divider {
@@ -5111,28 +5049,8 @@ a.menu-home {
     .sub-nav-item.last {
         margin-bottom: 0
     }
-
-    .about-container {
-        height: auto;
-        margin-top: 120px;
-        padding-left: 32px;
-        padding-right: 32px
-    }
-
     .img_about {
         width: 60vw
-    }
-
-    .about {
-        width: 100%;
-        max-width: none;
-        float: none;
-        position: static
-    }
-
-    .about-text {
-        margin-bottom: 32px;
-        font-size: 18px
     }
 
     .divider {
@@ -5172,11 +5090,6 @@ a.menu-home {
     .press-container {
         padding-left: 32px;
         padding-right: 32px
-    }
-
-    .about-wrapper {
-        padding-top: 0;
-        padding-bottom: 0
     }
 
     .podcast {
@@ -5530,13 +5443,6 @@ a.menu-home {
     .sub-nav-item.last {
         margin-bottom: 0
     }
-
-    .about-container {
-        margin-top: 120px;
-        padding-left: 32px;
-        padding-right: 32px
-    }
-
     .img_about {
         max-width: none;
         min-width: auto;
@@ -5552,10 +5458,6 @@ a.menu-home {
     .press-container {
         padding-left: 32px;
         padding-right: 32px
-    }
-
-    .about-wrapper {
-        margin-bottom: 80px
     }
 
     .podcast {
